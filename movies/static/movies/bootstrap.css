@@ -482,6 +482,11 @@ mark,
   height: auto;
 }
 
+.img-movie-shots {
+  max-width: 250px;
+  height: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -8971,5 +8976,9 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important;
   }
+}
+.img-movie-shots {
+  max-width: 250px;
+  height: auto;
 }
 /*# sourceMappingURL=bootstrap.css.map */
