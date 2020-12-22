@@ -1565,4 +1565,8 @@ a.move-top span {
 
 @media(max-width:320px) {}
 
+.rew {
+    width: 100%;
+}
+
 /*--//responsive--*/
