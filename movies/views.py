@@ -1,13 +1,18 @@
 from django.shortcuts import render, redirect
 from django.views.generic import ListView, DetailView
 from django.views.generic.base import View
-from .models import Movie
+from .models import Movie, Category
 from .forms import ReviewForm
 
 class MoviesView(ListView):
     """Список фильмов"""
     model = Movie
     queryset = Movie.objects.filter(draft=False)
+
+    # def get_context_data(self, *args, **kwargs):
+    #     context = super().get_context_data(*args, **kwargs)
+    #     context['categories'] = Category.objects.all()
+    #     return context
 
 
 class MovieDetailView(DetailView):
